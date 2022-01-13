@@ -1,0 +1,22 @@
+.shortTitle .p-card-body .p-card-title{
+    font-size:16px !important;
+}
+
+.centeredFooter .p-card-body .p-card-footer{
+    display:block !important;
+    text-align: -webkit-center !important;
+}
+
+.centeredCard{
+    text-align:-webkit-center !important;
+}
+
+.centeredCard .p-card-header{
+    border-color: #d5d5d5;
+    border-bottom: 2px solid !important;
+}
+
+/*
+.usercard-tabview .p-tabview-panels .p-tabview-panel{
+    display:flex !important;
+}*/

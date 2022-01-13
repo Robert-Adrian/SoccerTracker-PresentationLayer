@@ -1,0 +1,172 @@
+#up_menu {
+    position: fixed;
+    background: linear-gradient(270deg, #7474BF, #348AC7);
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 16;
+}
+
+.up-menu div:nth-child(1) span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-menu div:nth-child(1) span h2 {
+    margin-left: 14px;
+    color: white;
+}
+
+.up-menu div:nth-child(1) img {
+    width: 40px;
+    height: 40px;
+}
+
+#up_menu a {
+    color: white;
+}
+
+#up_menu a:hover {
+    color: #7474BF;
+}
+
+.up-menu li {
+    align-self: flex-end;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.up-menu li:nth-last-of-type(-n+2) {
+    pointer-events:fill;
+    opacity: 1;
+}
+
+.up-menu li:nth-last-of-type(-n+2) span:nth-child(2) {
+    display: none;
+} 
+
+
+.up-menu li:nth-last-of-type(-n+2) a:hover > span::before {
+    color: #7474BF;
+}
+
+.up-menu li:nth-last-of-type(-n+2) a span::before {
+    color: white;
+    transition: 0.5s;
+}
+
+.left-menu li:nth-child(1) {
+    grid-area: "admin";
+}
+
+.left-menu li:nth-child(2) {
+    grid-area: "calendar";
+}
+
+.left-menu li:nth-child(3) {
+    grid-area: "jucatori";
+}
+
+.left-menu li:nth-child(4) {
+    grid-area: "istoric";
+}
+
+.left-menu li:nth-child(5) {
+    grid-area: "analiza";
+}
+
+.left-menu {
+    max-width: 61px;
+    height: 100vh;
+    z-index: 5;
+}
+
+#pr_id_1 {
+    position: fixed;
+    margin-top: 50px;
+    background: linear-gradient(0deg, #7474BF, #348AC7);
+    border: 0;
+    border-radius: 0;
+    z-index: 16;
+}
+
+#pr_id_1 ul li a:nth-child(1) span:nth-child(1) {
+    padding: 10px 0 10px 0;
+}
+
+#pr_id_1 ul li a:nth-child(1) span:nth-child(1)::before {
+    color: white;
+    transition: 0.5s;
+}
+
+#pr_id_1 ul li a:hover > span:nth-child(1)::before {
+    color: #7474BF;
+}
+
+#pr_id_1 ul li:nth-child(n+2) > ul li a span:nth-child(1)::before {
+    color: black;
+}
+
+.left-menu ul {
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30% 30%;
+    grid-template-columns: auto;
+    grid-template-areas: "admin" "calendar" "jucatori" "istoric" "analiza";
+}
+
+.left-menu li a:nth-child(1) .pi-angle-right {
+    display: none;
+}
+
+.left-menu li {
+    align-self: center;
+}
+
+@media screen and (max-width: 959px) {
+    .left-menu {
+        display: none;
+    }
+
+    .up-menu li {
+        pointer-events: fill;
+        opacity: 1;
+    }
+
+    .up-menu div:nth-child(1) img  {
+        display: none;
+    }
+
+    .up-menu li:nth-last-of-type(-n+2) {
+        pointer-events:fill;
+        opacity: 1;
+    }
+    
+    .up-menu li:nth-last-of-type(-n+2) span:nth-child(2) {
+        display: block;
+    } 
+
+    .up-menu li:nth-last-of-type(-n+2) a span::before {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .up-menu li:nth-child(5) a:hover > span::before {
+        color: none;
+    }
+    
+    .up-menu li:last-of-type a:hover > span::before {
+        color: rgb(65, 64, 64);
+    }
+    
+    .up-menu li:last-of-type a span::before, .up-menu li:nth-child(5) a span::before {
+        color: rgb(83, 83, 83);
+    }
+
+    .up-menu li:last-of-type span:nth-child(2), .up-menu li:nth-child(5) span:nth-child(2) {
+        display: block;
+    } 
+}

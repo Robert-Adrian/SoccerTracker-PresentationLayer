@@ -1,0 +1,50 @@
+.Players {
+    margin-left:50px;
+    padding-top: 70px;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background-color: hsl(0, 8%, 93%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Dosis', sans-serif;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 70%;
+}
+
+.operations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+#pr_id_2 {
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 15px rgb(128, 127, 127);
+}
+
+.custom-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 959px) {
+    .Players {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .operations {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

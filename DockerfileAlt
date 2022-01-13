@@ -1,0 +1,13 @@
+FROM node:12-alpine as node
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install --silent
+RUN npm install react-scripts@3.4.1 -g --silent
+
+EXPOSE 80 4200
+
+CMD ["npm", "start"]
+

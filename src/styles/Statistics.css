@@ -1,0 +1,270 @@
+.wrapper {
+  height: 100vh;
+  background-color: #e4e2dd;
+  grid-template-columns: 120px auto 60px;
+  grid-template-rows: 120px auto;
+  display: grid;
+  overflow: auto;
+}
+
+.background {
+  background: #4d76b9;
+  border: 0.5px mediumpurple;
+  box-shadow: 2px 2px 2px #858ec6; 
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-template-columns: 5px auto 5px;
+  grid-template-rows: 5px auto;
+  display: grid;
+}
+
+.statistics {
+  background: linear-gradient(260deg, #7474bf, #348ac7);
+  border: 0.5px solid rgb(131, 93, 218);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 70px 50px auto 50px auto;
+  display: grid;
+}
+
+.grade {
+  padding: 10px;
+}
+
+.grade p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-shadow:
+    1px  1px 1px #000,  
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+    1px  1px 1px #000;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.filter {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#teamfilter {
+  margin: 5px;
+  margin-right: 0;
+  border-radius: 20px;
+  width: 200px;
+  border: 0;
+}
+
+#timepicker {
+  margin: 5px;
+  margin-right: 0;
+  border-radius: 20px;
+  width: 250px;
+  border: 0;
+}
+
+.graph {
+  padding-top: 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.accordion {
+  margin-top: 15px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.game-history {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  color: white;
+  font-family: sans-serif;
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-shadow:
+    1px  1px 1px #000,  
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+    1px  1px 1px #000;
+  bottom: 0;
+  right: 0;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.game-accordion {  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.game-accordion p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.accordion .p-accordion-content {
+  background: linear-gradient(260deg, #7474bf, #348ac7) !important;
+  border: 3px solid white;
+}
+
+.main-details {
+  color: white;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-decoration: underline;
+  text-shadow:
+    1px  1px 1px #000,  
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+    1px  1px 1px #000;
+  bottom: 0;
+  right: 0;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.main-players {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.individual-player {
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-between;
+}
+
+.scored {
+  width: 20%;
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-between;
+}
+
+.yellow-dot {
+  margin-top: 12.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #e2ea23;
+  border-radius: 50%;
+}
+
+.red-dot {
+  margin-top: 12.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #c73333;
+  border-radius: 50%;
+}
+
+.individual-details {
+  color: white;
+  font-family: sans-serif;
+  text-shadow:
+    1px  1px 1px #000,  
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+    1px  1px 1px #000;
+}
+
+.team-players-background {
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  flex: inline;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.types-of-training {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-left: 10px;
+  padding-top: 120px;
+  border-right: 1px solid white;
+}
+
+.training-type {
+  padding-right: 10px;
+  font-size: .9em;
+  border-bottom: 1px solid white;
+}
+
+.player-details {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: 100%;
+  display: flex;
+  width: 80px;
+  flex-direction: column;
+  border-right: 1px solid white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.training-points {
+  padding-right: 10px;
+  font-size: .9em;
+  margin-bottom: 13.5px;
+  margin-top: 17px;
+}
+
+.icon-background {
+  height: 55px;
+  background: #696969;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  text-shadow:
+    1px  1px 1px #000,  
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+    1px  1px 1px #000;
+}
+
+.player-name {
+  margin-top: 2px;
+  font-size: .8em;
+  color: white;
+  text-align: center;
+  text-shadow:
+    1px  1px 1px #000,  
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+    1px  1px 1px #000; 
+  display: list-item;;
+  list-style: none;
+  overflow: hidden;
+  height: 50px;
+}
+
+.player-name h4 {
+  margin-bottom: 0px;
+}

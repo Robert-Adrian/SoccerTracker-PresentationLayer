@@ -1,0 +1,333 @@
+.Home {
+    padding-top: 70px;
+    margin-left:60px !important;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    overflow:auto !important;
+    overflow-y:auto !important;
+    background-color: hsl(0, 8%, 93%);
+}
+
+.Home p {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px){
+    .Home {
+        padding-top:6rem !important;
+        margin-left:0px !important;
+        width: 100%;
+        height: 100vh;
+        color: black;
+        /*overflow-x: hidden;*/
+    }
+
+    .overflow-dlg-content .p-dialog-content{
+        overflow:overlay !important;
+    }
+
+
+}
+
+@media screen and (max-width:1100px) {
+    h2.fc-toolbar-title {
+        font-size:20px !important;
+    }
+}
+
+@media (max-width: 720px){
+    a.fc-col-header-cell-cushion{
+        font-size:10px !important;
+    }
+}
+
+.training, .training .p-dialog-header{
+    background: #5499C7  !important;
+    /*background: linear-gradient(0deg, rgba(7,38,54,1) 0%, rgba(14,82,113,1) 100%) !important;*/
+
+}
+
+.training.calendar-event:hover{
+    background: #1F618D  !important;
+    cursor: pointer  !important;
+}
+
+.game, .game .p-dialog-header{
+    background: #CD6155   !important;
+    /*background: linear-gradient(0deg, rgba(54,7,21,1) 0%, rgba(170,6,34,1) 100%) !important;*/
+
+}
+
+.game.calendar-event:hover{
+    background:#922B21  !important;
+    cursor: pointer  !important;
+}
+
+.meeting, .meeting .p-dialog-header{
+    background: #52BE80  !important;
+    /*background: linear-gradient(180deg, rgba(24,224,73,1) 0%, rgba(1,121,34,1) 100%) !important;*/
+
+}
+
+.meeting .p-dialog-content, .game .p-dialog-content, .training .p-dialog-content{
+    padding-top:2em !important
+}
+
+.meeting.calendar-event:hover{
+    background: #1E8449 !important;
+    cursor: pointer  !important;
+}
+
+.inline-table{
+    display: inline-table !important;
+}
+
+.event-panel div.p-panel-content{
+    background: inherit !important;
+    border:0 !important;
+    font-weight: bold !important;
+    color:white !important;
+    font-size:12px !important;
+}
+
+.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-past:hover{
+    cursor: pointer  !important;
+}
+
+.texts{
+    font-size:18px !important
+}
+@media screen and (max-width: 959px) {
+    .Home {
+        margin-left: 0;
+    }
+}
+
+.add-button{
+    border-radius:25px !important;
+    opacity: 0.5 !important;
+    float:right !important;
+    position: fixed !important;
+    bottom:3vh !important;
+
+    right: 40px !important;
+    z-index:100 !important;
+}
+.add-button:hover{
+    opacity: 1 !important;
+}
+
+.fixed-field{
+    z-index:100 !important;
+    opacity:0.5 !important;
+    float:right !important;
+    padding:0px !important;
+    position: fixed !important;
+    bottom:3.1vh !important;
+    right: 90px !important;
+}
+
+.fixed-field:hover{
+    opacity:1 !important;
+}
+
+.upload-button{
+    border-radius:25px !important;
+    opacity: 0.7 !important;
+    float:right !important;
+    position: fixed !important;
+    bottom:40px !important;
+    right: 90px !important;
+    z-index:100 !important;
+}
+
+.upload-button:hover{
+    opacity: 1 !important;
+}
+
+.p-datepicker.p-component.p-connected-overlay-enter-done{
+
+}
+
+.p-dialog-content{
+    overflow: visible !important;
+}
+
+.activ-status{
+    background: #689F38 !important;
+}
+
+.inactive-status{
+    background: #FBC02D !important;
+}
+
+.homeTable table{
+    box-shadow: none !important;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.add-user-button{
+    height: 40px;
+    width: 40px !important;
+    border-radius: 25px !important;
+}
+
+/* ChipDemo.css */
+
+.p-chip.custom-chip {
+    background: var(--primary-color);
+    color: var(--primary-color-text);
+}
+
+/* MultiSelectDemo.css */
+
+.multiselect-demo .p-multiselect {
+    min-width: 15rem;
+}
+
+.multiselect-demo .multiselect-custom .p-multiselect-label:not(.p-placeholder):not(.p-multiselect-items-label) {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.multiselect-demo .multiselect-custom .country-item-value {
+    padding: .25rem .5rem;
+    border-radius: 3px;
+    display: inline-flex;
+    margin-right: .5rem;
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+}
+
+.multiselect-demo .multiselect-custom .country-item-value img.flag {
+    width: 17px;
+}
+
+/* DataTableDemo.css */
+
+.datatable-responsive-demo .p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
+    display: none !important;
+}
+
+@media screen and (max-width: 60em) {
+    td.only-player{
+        display:none !important;
+    }
+
+    .datatable-responsive-demo .p-datatable.p-datatable-responsive-demo .p-datatable-thead > tr > th,
+    .datatable-responsive-demo .p-datatable.p-datatable-responsive-demo .p-datatable-tfoot > tr > td {
+        display: none !important;
+    }
+
+    .datatable-responsive-demo .p-datatable.p-datatable-responsive-demo .p-datatable-tbody > tr > td {
+        text-align: left !important;
+        display: block !important;
+        width: 100% !important;
+        float: left !important;
+        clear: left !important;
+        border: 0 none !important;
+    }
+
+    .datatable-responsive-demo .p-datatable.p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
+        padding: .4rem !important;
+        min-width: 30% !important;
+        display: inline-block !important;
+        margin: -.4em 1em -.4em -.4rem !important;
+        font-weight: bold !important;
+    }
+
+    .datatable-responsive-demo .p-datatable.p-datatable-responsive-demo .p-datatable-tbody > tr > td:last-child {
+        border-bottom: 1px solid var(--surface-d) !important;
+    }
+
+}
+
+
+@media screen and (max-width: 60em) {
+    .table-width {
+        width: 20rem !important;
+    }
+}
+
+@media (min-width:60rem) {
+    .table-width {
+        width: 0rem !important;
+    }
+
+    .assessmentsDlg .p-dialog-content{
+        padding:0 !important;
+    }
+}
+
+/* DataTableDemo.css */
+
+.datatable-editing-demo .editable-cells-table td.p-cell-editing {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.p-multistatecheckbox.p-checkbox.p-component.Green .p-checkbox-box.p-highlight, .Green.p-dropdown.p-component.p-inputwrapper, .Green.p-dropdown-item{
+    background:#92d050 !important;
+    color:white !important;
+}
+
+.p-multistatecheckbox.p-checkbox.p-component.Yellow .p-checkbox-box.p-highlight, .Yellow.p-dropdown.p-component.p-inputwrapper, .Yellow.p-dropdown-item{
+    background:#ffc000 !important;
+    color:white !important;
+}
+
+.p-multistatecheckbox.p-checkbox.p-component.Red .p-checkbox-box.p-highlight, .Red.p-dropdown.p-component.p-inputwrapper, .Red.p-dropdown-item{
+    background:#ff0000 !important;
+    color:white !important;
+}
+
+.Red .p-dropdown-label.p-inputtext, .Yellow .p-dropdown-label.p-inputtext, .Green .p-dropdown-label.p-inputtext{
+    color:white !important;
+    font-size:10px !important;
+}
+
+.raeMultiState, .raeMultiState .p-checkbox-box{
+    width:100% !important;
+}
+
+.input-width-100, .input-width-100 .p-inputtext.p-component.p-filled.p-inputnumber-input{
+    width:100% !important;
+}
+
+.root .Home .round-corners ~ .p-dropdown-panel.p-component.p-connected-overlay-enter-done{
+    border-radius:25px !important;
+}
+
+.rounded-dropdown{
+    border-radius:25px !important;
+    background: #2196F3 !important;
+}
+
+.rounded-dropdown .p-dropdown-label.p-inputtext, .rounded-dropdown .p-dropdown-trigger{
+    color:white !important;
+}
+
+.assessmentsDlg{
+    overflow:auto !important
+}
+
+.p-column-title.font-size-14{
+    width:100% !important;
+}
+
+.p-column-title{
+    color:black !important;
+
+}
+
+div.stripe-datatable .p-datatable-scrollable-wrapper .p-datatable-scrollable-view .p-datatable-scrollable-body .p-datatable-scrollable-body-table .p-datatable-tbody:nth-child(-n+3) tr td{
+    background:white !important;
+}
+
+.chart-panel .p-toggleable-content .p-panel-content{
+    border-radius:25px !important;
+}

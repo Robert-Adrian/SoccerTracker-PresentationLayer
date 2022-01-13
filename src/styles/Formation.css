@@ -1,0 +1,99 @@
+.Formation {
+    padding-top: 60px;
+    margin-left:60px;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background-color: hsl(0, 8%, 93%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.p-col-4 {
+    height: 100vh;
+}
+
+.p-col-12:first-of-type {
+    margin-top: 10px;
+    height: 75vh;
+    padding-right: 60px;
+}
+
+.p-col-12:last-of-type {
+    height: 40vh;
+    padding-right: 60px;
+}
+
+.card-field {
+    width: 100%;
+    height: 90%;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card-field img {
+    width: 100%;
+}
+
+.card-player {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: rgb(106, 156, 248); */
+}
+
+.p-mr-2 {
+    margin: 0;
+    padding: 0;
+}
+
+.p-grid.p-dir-col {
+    display: none;
+    height: 100vh;
+}
+
+.p-grid.p-dir-col .p-col {
+    height: 40vh;
+}
+
+#dropdown {
+    display: block;
+    height: 10vh;
+    padding: 10px 0 10px 20px;
+}
+
+
+@media screen and (max-width: 959px) {
+    .Formation {
+        margin-left: 0;
+        overflow-y: scroll;
+    }
+
+    .p-col-12 {
+        padding-right: 0;
+    }
+
+    .p-grid.nested-grid {
+        display: none;
+    }
+
+    .p-grid.p-dir-col {
+        display: block;
+    }
+    
+    .card-player p, .card-player .p-mr-2 {
+        margin: 0;
+    }
+
+    .p-grid .p-col {
+        padding: 2px;
+    }
+
+    .p-grid.p-dir-col .p-col .p-grid {
+        margin: 0;
+    }
+
+}
+

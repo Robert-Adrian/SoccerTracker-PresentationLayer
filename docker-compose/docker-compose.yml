@@ -1,0 +1,53 @@
+version: '3'
+services:
+  react:
+    image: reactimg
+    ports: 
+      - "82:80"
+    networks:
+      - soccertracker-network
+    environment:
+      - "REACT_APP_API_URL=http://localhost:8084"
+    depends_on:
+      - spring
+  spring:
+    image: springimg
+    ports:
+      - "8084:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db/soccertrackerdev
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=Mezhh5PKgL8BeJhA
+    networks:
+      - soccertracker-network
+    depends_on:
+      - db
+  flyway:
+    image: flywayimg
+    environment:
+      - FLYWAY_DB_URL=jdbc:mysql://db
+      - FLYWAY_DB_USER=root
+      - FLYWAY_DB_PASSWORD=Mezhh5PKgL8BeJhA
+      - FLYWAY_DB_SCHEMAS=soccertrackerdev
+      - FLYWAY_CONNECT_RETRIES=60
+    networks:
+      - soccertracker-network
+    depends_on:
+      - db
+  db:
+    image: mysql:8.0.27
+    environment:
+      - MYSQL_ROOT_PASSWORD=Mezhh5PKgL8BeJhA
+      - MYSQL_DATABASE=soccertrackerdev
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "3309:3306"     
+    volumes:
+      - st-datavolume:/var/lib/mysql
+    networks:
+      - soccertracker-network
+volumes:
+  st-datavolume:
+networks:
+  soccertracker-network:
+    driver: bridge

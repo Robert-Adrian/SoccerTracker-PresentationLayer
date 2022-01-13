@@ -1,0 +1,64 @@
+.Dropdown {
+    position: absolute;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.Dropdown div input {
+    width: 27px;
+    outline: none;
+    border: 0;
+    color: #809FE6;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #809FE6;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 15px rgb(128, 127, 127);
+    font-size: 17px;
+    background-color: white;
+
+}
+
+.Dropdown div:nth-child(1) button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.Dropdown div:nth-child(1) button i {
+    color: #809FE6;
+}
+
+.Dropdown div:nth-child(1) button:focus {
+    outline: none;
+}
+
+.Dropdown div:nth-child(2) {
+    display: none;
+}
+
+.Dropdown div:nth-child(2) ul {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.Dropdown div:nth-child(2) ul li{
+    max-width: 100%;
+    padding: 2px;
+    cursor: pointer;
+    color: #809FE6;
+    border: 1px solid rgb(141, 141, 141);
+}
+
+.Dropdown div:nth-child(2) ul li:hover {
+    background-color:rgb(219, 219, 219);
+}
